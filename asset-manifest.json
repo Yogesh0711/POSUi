@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/POSUi/static/css/main.ed6f4fe6.css",
+    "main.js": "/POSUi/static/js/main.a6e835d8.js",
+    "static/js/488.52b8d3c8.chunk.js": "/POSUi/static/js/488.52b8d3c8.chunk.js",
+    "index.html": "/POSUi/index.html",
+    "main.ed6f4fe6.css.map": "/POSUi/static/css/main.ed6f4fe6.css.map",
+    "main.a6e835d8.js.map": "/POSUi/static/js/main.a6e835d8.js.map",
+    "488.52b8d3c8.chunk.js.map": "/POSUi/static/js/488.52b8d3c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed6f4fe6.css",
+    "static/js/main.a6e835d8.js"
+  ]
+}
