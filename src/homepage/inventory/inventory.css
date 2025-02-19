@@ -1,0 +1,8 @@
+.inventoryContainer{
+    position: absolute;
+    left: 7vw;
+    box-sizing: border-box;
+    width: 93vw;
+    height: 100%;
+    padding: 20px 40px 20px 30px;
+}
