@@ -1,20 +1,20 @@
-// import { initializeApp } from "firebase/app";
-// import { getFirestore } from "firebase/firestore";
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
-// const firebaseConfig = {
-//     apiKey: "AIzaSyCoYTkTYTwLvQuNuBNhFBQF54zatysxO4s",
-//     authDomain: "pointofsales-939f4.firebaseapp.com",
-//     projectId: "pointofsales-939f4",
-//     storageBucket: "pointofsales-939f4.firebasestorage.app",
-//     messagingSenderId: "635562143142",
-//     appId: "1:635562143142:web:99ede719cb992679e0f367",
-//     measurementId: "G-7L7XN4XENP"
-// };
+const firebaseConfig = {
+    apiKey: "AIzaSyCoYTkTYTwLvQuNuBNhFBQF54zatysxO4s",
+    authDomain: "pointofsales-939f4.firebaseapp.com",
+    projectId: "pointofsales-939f4",
+    storageBucket: "pointofsales-939f4.firebasestorage.app",
+    messagingSenderId: "635562143142",
+    appId: "1:635562143142:web:99ede719cb992679e0f367",
+    measurementId: "G-7L7XN4XENP"
+};
 
-// const app = initializeApp(firebaseConfig);
-// const db = getFirestore(app);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-// export { db };
+export { db };
 
 
 
