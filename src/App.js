@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import './App.css';
 import SideNavBar from "./homepage/SideNavBar";
 import InventoryPage from './homepage/inventory/InventoryPage';
@@ -8,17 +8,20 @@ import Mainmenu from './homepage/menupage/MainMenu';
 
 
 
-
-
 function App() {
   const [selectedPage, setSelectedpage] = useState('/menu')
-
+  useEffect(()=>{
+    ZOHO.CREATOR.init()
+      .then(function () {
+        console.log('initiated')
+      });
+  })
   return (
-    <Router>
+    <Router basename="/POSUi">
       <div className="App" style={{ "--primary-bg": Theme.primary }}>
         <SideNavBar setSelectedpage={setSelectedpage} selectedPage={selectedPage} />
         <Routes>
-          <Route path="/" element={<Mainmenu />} />
+          <Route path="/" element={<Navigate to="/menu" replace />} />
           <Route path="/dashboard" element={<h1>Dashboard</h1>} />
           <Route path="/menu" element={<Mainmenu />} />
           <Route path="/inventory" element={<InventoryPage />} />
